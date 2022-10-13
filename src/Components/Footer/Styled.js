@@ -6,7 +6,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 6rem;
+  padding: 2rem 6rem;
   flex-wrap: wrap;
 `;
 export const FooterAbout = styled.div`
@@ -35,5 +35,6 @@ export const FooterMedia = styled.div`
   display: flex;
   flex-direction: row;
   gap: 15px;
+  align-self: flex-end;
 
 `;
