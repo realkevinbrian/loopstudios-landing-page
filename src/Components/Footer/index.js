@@ -23,7 +23,9 @@ function index() {
   );
 
   //social media
-  const media = [fb, tw, pint, insta];
+  const media = [fb, tw, pint, insta].map((item) => (
+    <img src={item} alt={item} key={item} />
+  ));
 
   return (
     <FooterWrapper>
