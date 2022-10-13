@@ -50,10 +50,16 @@ export const CardOverlay = styled.div`
   flex-direction: column;
   place-content: end;
   place-items: center;
+  transition: all 0.2s linear;
 
   > * {
     padding: 10px;
     color: white;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: #0000008c;
+    cursor: pointer;
   }
 `;
