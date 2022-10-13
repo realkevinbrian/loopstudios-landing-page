@@ -1,13 +1,12 @@
 import React from "react";
 import { CardOverlay, CardWrapper } from "./Styled";
-import sample from "../../Assets/images/desktop/image-soccer-team.jpg";
 
-function Card() {
+function Card({ data }) {
   return (
     <CardWrapper>
-      <img src={sample} alt="blogpost" />
+      <img src={data.image} alt="blogpost" />
       <CardOverlay>
-        <h3>Deep earth</h3>
+        <h2>{data.title}</h2>
       </CardOverlay>
     </CardWrapper>
   );

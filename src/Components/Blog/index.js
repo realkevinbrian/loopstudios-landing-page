@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useContext } from "react";
+import { Context } from "../../Context/blogPosts";
 import Card from "./Card";
 import { BlogBodyWrapper, BlogHeadWrapper, BlogWrapper } from "./Styled";
 
@@ -17,17 +17,18 @@ export default index;
 function BlogHead() {
   return (
     <BlogHeadWrapper>
-      <h4>our creations</h4>
+      <h2>our creations</h2>
       <a href="/">See All</a>
     </BlogHeadWrapper>
   );
 }
 
 function BlogBody() {
+  const posts = useContext(Context);
   return (
     <BlogBodyWrapper>
-      {[1, 2, 3, 4, 5].map((item) => (
-        <Card key={item} data={item} />
+      {posts.map((item) => (
+        <Card key={item.id} data={item} />
       ))}
     </BlogBodyWrapper>
   );
