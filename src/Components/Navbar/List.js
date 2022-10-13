@@ -7,7 +7,7 @@ function List() {
     <ListWrapper>
       {items.map((item) => (
         <a href="/" key={item}>
-          {items}
+          {item}
         </a>
       ))}
     </ListWrapper>
