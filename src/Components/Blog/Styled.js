@@ -43,9 +43,9 @@ export const CardWrapper = styled.div`
 `;
 export const CardOverlay = styled.div`
   position: absolute;
-  top: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   place-content: end;
@@ -59,6 +59,7 @@ export const CardOverlay = styled.div`
   }
 
   &:hover {
+    height: 100%;
     background-color: #0000008c;
     cursor: pointer;
   }
