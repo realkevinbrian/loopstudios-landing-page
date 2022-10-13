@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <About />
       <Blog />
-      {/* <Footer /> */}
+      <Footer />
     </Context.Provider>
   );
 }

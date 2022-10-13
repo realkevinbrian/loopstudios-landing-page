@@ -34,3 +34,21 @@ a,
 p {
   font-family: "Alata", sans-serif;
 }
+
+.hoverEffect > div {
+  display: grid;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.hoverEffect > div > span {
+  transition: all 0.2s linear;
+  background-color: transparent;
+  height: 2px;
+  width: 10%;
+}
+
+.hoverEffect > div:hover > span {
+  background-color: white;
+  width: 100%;
+}

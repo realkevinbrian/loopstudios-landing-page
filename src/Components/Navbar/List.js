@@ -4,11 +4,14 @@ import { ListWrapper } from "./Styled";
 function List() {
   const items = ["About", "careers", "event", "products", "support"];
   return (
-    <ListWrapper>
+    <ListWrapper className="hoverEffect">
       {items.map((item) => (
-        <a href="/" key={item}>
-          {item}
-        </a>
+        <div>
+          <a href="/" key={item}>
+            {item}
+          </a>
+          <span></span>
+        </div>
       ))}
     </ListWrapper>
   );

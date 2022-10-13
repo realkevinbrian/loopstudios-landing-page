@@ -11,35 +11,46 @@ import fb from "../../Assets/images/icon-facebook.svg";
 import tw from "../../Assets/images/icon-twitter.svg";
 import pint from "../../Assets/images/icon-pinterest.svg";
 import insta from "../../Assets/images/icon-instagram.svg";
+import logo from "../../Assets/images/logo.svg";
 
 function index() {
   //list link
   const list = ["About", "careers", "event", "products", "support"].map(
     (item) => (
-      <a href="/" key={item}>
-        {item}
-      </a>
+      <div>
+        <a href="/" key={item}>
+          {item}
+        </a>
+        <span></span>
+      </div>
     )
   );
 
   //social media
   const media = [fb, tw, pint, insta].map((item) => (
-    <img src={item} alt={item} key={item} />
+    <div>
+      <img src={item} alt={item} key={item} />
+      <span></span>
+    </div>
   ));
 
   return (
     <FooterWrapper>
       <FooterAbout>
-        <Logo />
-        <FooterList>{list}</FooterList>
+        <Logo>
+          <img src={logo} alt="logo" />
+        </Logo>
+        <FooterList className="hoverEffect">{list}</FooterList>
       </FooterAbout>
 
       <FooterPrivacy>
-        <FooterMedia>{media}</FooterMedia>
+        <FooterMedia className="hoverEffect">{media}</FooterMedia>
         <p>
-          &copy; 2022 Loopstudios, developed by &heart;
-          <a href="realkevinbrian.netlify.app">Kevin Brian</a>All rights
-          reserved
+          <span>&copy; 2022 Loopstudios, All rights reserved</span>
+          <span>
+            Powered by
+            <a href="realkevinbrian.netlify.app"> &hearts;Kevin Brian</a>
+          </span>
         </p>
       </FooterPrivacy>
     </FooterWrapper>
