@@ -19,4 +19,7 @@ export const ListWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  a{
+    text-transform: capitalize;
+  }
 `;

@@ -20,11 +20,15 @@ export const FooterList = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  a {
+    text-transform: capitalize;
+  }
 `;
 export const FooterPrivacy = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
   p {
     display: flex;
     flex-direction: column;
@@ -36,5 +40,4 @@ export const FooterMedia = styled.div`
   flex-direction: row;
   gap: 15px;
   align-self: flex-end;
-
 `;
