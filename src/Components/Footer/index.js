@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "../Navbar/Styled";
+import { Wrapper} from "../Navbar/Styled";
 import {
   FooterAbout,
   FooterList,
@@ -37,9 +37,9 @@ function index() {
   return (
     <FooterWrapper>
       <FooterAbout>
-        <Logo>
-          <img src={logo} alt="logo" />
-        </Logo>
+        <Wrapper>
+          <img id = "logo" src={logo} alt="logo" />
+        </Wrapper>
         <FooterList className="hoverEffect">{list}</FooterList>
       </FooterAbout>
 

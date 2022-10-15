@@ -9,9 +9,9 @@ function App() {
   return (
     <Context.Provider value={blogPosts}>
       <Hero />
-      <About />
-      <Blog />
-      <Footer />
+      {/* <About /> */}
+      {/* <Blog /> */}
+      {/* <Footer /> */}
     </Context.Provider>
   );
 }

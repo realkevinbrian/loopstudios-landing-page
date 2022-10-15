@@ -1,14 +1,18 @@
 import React from "react";
-import { Logo, NavbarWrapper } from "./Styled";
+import { Wrapper, NavbarWrapper, StateButtons } from "./Styled";
 import logo from "../../Assets/images/logo.svg";
 import List from "./List";
+import closeBtn from "../../Assets/images/icon-close.svg";
+import openBtn from "../../Assets/images/icon-hamburger.svg";
 
 function index() {
   return (
     <NavbarWrapper>
-      <Logo>
-        <img src={logo} alt="media" />
-      </Logo>
+      <Wrapper>
+        <img id="logo" src={logo} alt="media" />
+        <img className=" StateButtons" src={closeBtn} alt="closebutton" />
+        <img className=" StateButtons open" src={openBtn} alt="openbutton" />
+      </Wrapper>
       <List />
     </NavbarWrapper>
   );
