@@ -14,7 +14,7 @@ export const HeroWrapper = styled.main`
 
   @media (max-width: 600px) {
     padding: 0;
-    height: 90vh;
+    height: 80vh;
     background-image: url(${Mobilebg});
   }
 `;
@@ -34,4 +34,12 @@ export const HeroContentText = styled.div`
   color: white;
   font-size: 1.5rem;
   border: 1px solid white;
+
+  @media (max-width: 600px) {
+  
+  margin: 1rem;
+  padding: .5rem;
+  max-width: 100%;
+
+  }
 `;
