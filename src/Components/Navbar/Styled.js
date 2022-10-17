@@ -10,7 +10,7 @@ export const NavbarWrapper = styled.div`
   }
 
   @media (max-width: 600px) {
-    .StateButtons.open {
+    .StateButtons.openMenu {
       display: flex;
       position: relative;
       z-index: 10;
@@ -41,14 +41,15 @@ export const Wrapper = styled.div`
 
 export const ListWrapper = styled.div`
   color: white;
-  display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
   text-transform: capitalize;
-  
+  transition: all 0.5s linear;
+  display: flex;
 
   @media (max-width: 600px) {
+    display: ${({ open }) => (open ? "flex" : "none")};
     position: fixed;
     top: 0;
     background-color: black;
@@ -59,7 +60,7 @@ export const ListWrapper = styled.div`
     place-content: center;
     align-items: start;
     text-transform: uppercase;
-    padding:0 2rem;
+    padding: 0 2rem;
   }
 `;
 

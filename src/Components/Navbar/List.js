@@ -1,15 +1,13 @@
 import React from "react";
 import { ListWrapper } from "./Styled";
 
-function List() {
+function List({ open }) {
   const items = ["About", "careers", "event", "products", "support"];
   return (
-    <ListWrapper className="hoverEffect">
+    <ListWrapper className="hoverEffect" open={open}>
       {items.map((item) => (
-        <div>
-          <a href="/" key={item}>
-            {item}
-          </a>
+        <div key={item}>
+          <a href="/">{item}</a>
           <span></span>
         </div>
       ))}
