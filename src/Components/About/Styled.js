@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const AboutWrapper = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const AboutMediaWrapper = styled.div`
   display: flex;
@@ -12,6 +16,14 @@ export const AboutMediaWrapper = styled.div`
   img {
     max-width: 100%;
     width: 600px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0;
+    img {
+      margin: 3rem 1rem;
+      width: 100%;
+    }
   }
 `;
 export const AboutContentWrapper = styled.div`
@@ -36,5 +48,14 @@ export const AboutContentText = styled.div`
 
   p {
     color: ${({ theme }) => theme.Colors.DarkGray};
+  }
+
+  @media (max-width: 600px) {
+    position: initial;
+    padding: 0;
+    gap: 0;
+    transform: none;
+    box-shadow: none;
+    padding: 1rem;
   }
 `;

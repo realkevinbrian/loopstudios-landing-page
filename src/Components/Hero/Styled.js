@@ -36,10 +36,8 @@ export const HeroContentText = styled.div`
   border: 1px solid white;
 
   @media (max-width: 600px) {
-  
-  margin: 1rem;
-  padding: .5rem;
-  max-width: 100%;
-
+    margin: 1rem;
+    padding: 0.5rem;
+    max-width: 100%;
   }
 `;

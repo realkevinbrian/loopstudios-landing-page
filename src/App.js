@@ -9,7 +9,7 @@ function App() {
   return (
     <Context.Provider value={blogPosts}>
       <Hero />
-      {/* <About /> */}
+      <About />
       {/* <Blog /> */}
       {/* <Footer /> */}
     </Context.Provider>
